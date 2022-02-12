@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lotte_cinema_clone/resource/color_resource.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppThemeData {
-  static const _lightFillColor = ColorResource.black;
-  static const _darkFillColor = ColorResource.white;
-  static final Color _lightFocusColor = ColorResource.black.withOpacity(0.12);
+  static const _lightFillColor = Colors.black;
+  static const _darkFillColor = Colors.white;
+  static final Color _lightFocusColor = Colors.black.withOpacity(0.12);
 
   static ThemeData themeData() {
     return ThemeData(
       colorScheme: lightColorScheme,
       textTheme: _textTheme,
-      primaryColor: ColorResource.red,
+      primaryColor: Colors.red,
       appBarTheme: AppBarTheme(
         backgroundColor: lightColorScheme.background,
         titleTextStyle: _textTheme.headline4,
         centerTitle: true,
         elevation: 0,
-        iconTheme: const IconThemeData(color: ColorResource.black),
-        // actionsIconTheme: const IconThemeData(color: ColorResource.black)
+        iconTheme: const IconThemeData(color: Colors.black),
+        // actionsIconTheme: const IconThemeData(color: Colors.black)
       ),
       iconTheme: IconThemeData(color: lightColorScheme.onPrimary),
       canvasColor: lightColorScheme.background,
@@ -37,24 +36,25 @@ class AppThemeData {
       tabBarTheme: TabBarTheme(
         indicator: const BoxDecoration(
           border: Border(
-            bottom: BorderSide(width: 3, color: ColorResource.red),
+            bottom: BorderSide(width: 3, color: Colors.red),
           ),
         ),
         indicatorSize: TabBarIndicatorSize.tab,
-        labelColor: ColorResource.red,
+        labelColor: Colors.red,
         labelStyle: _textTheme.headline4,
-        unselectedLabelColor: ColorResource.black,
+        unselectedLabelColor: Colors.black,
         unselectedLabelStyle: _textTheme.headline4,
       ),
+      
     );
   }
 
   static const ColorScheme lightColorScheme = ColorScheme(
-    primary: ColorResource.red,
+    primary: Colors.red,
     primaryVariant: Color(0xFF117378),
     secondary: Color(0xFFEFF3F3),
     secondaryVariant: Color(0xFFFAFBFB),
-    background: ColorResource.white,
+    background: Colors.white,
     surface: Color(0xFFFAFBFB),
     onBackground: Colors.white,
     error: _lightFillColor,
@@ -74,12 +74,12 @@ class AppThemeData {
     headline1: GoogleFonts.roboto(
         fontWeight: _semiBold,
         fontSize: 16.0,
-        color: ColorResource.blackSecondary),
+        color: ColorName.blackSecondary),
     headline2: GoogleFonts.roboto(fontWeight: _semiBold, fontSize: 16.0),
     headline3: GoogleFonts.quicksand(
-        fontWeight: _semiBold, fontSize: 20.0, color: ColorResource.black),
+        fontWeight: _semiBold, fontSize: 20.0, color: Colors.black),
     headline4: GoogleFonts.quicksand(
-        fontWeight: _bold, fontSize: 18.0, color: ColorResource.black),
+        fontWeight: _bold, fontSize: 18.0, color: Colors.black),
     headline5: GoogleFonts.roboto(fontWeight: _medium, fontSize: 16.0),
     headline6: GoogleFonts.roboto(fontWeight: _bold, fontSize: 16.0),
     caption: GoogleFonts.roboto(fontWeight: _semiBold, fontSize: 16.0),
@@ -89,14 +89,14 @@ class AppThemeData {
     subtitle1: GoogleFonts.roboto(fontWeight: _medium, fontSize: 16.0),
     subtitle2: GoogleFonts.roboto(fontWeight: _medium, fontSize: 14.0),
     button: GoogleFonts.roboto(
-        fontWeight: _semiBold, fontSize: 14.0, color: ColorResource.white),
+        fontWeight: _semiBold, fontSize: 14.0, color: Colors.white),
   );
 
   static final ElevatedButtonThemeData _elevatedButtonThemeData =
       ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-              primary: ColorResource.red, onPrimary: ColorResource.white));
+              primary: Colors.red, onPrimary: Colors.white));
 
   static final TextStyle logoFontLight = GoogleFonts.dongle(
-      color: ColorResource.white, fontSize: 32, letterSpacing: 2.0);
+      color: Colors.white, fontSize: 32, letterSpacing: 2.0);
 }

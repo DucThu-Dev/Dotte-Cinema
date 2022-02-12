@@ -1,12 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lotte_cinema_clone/presentation/cinema/cinema_screen.dart';
-import 'package:flutter_lotte_cinema_clone/presentation/movie/movie_information_screen.dart';
-import 'package:flutter_lotte_cinema_clone/presentation/profile/profile_screen.dart';
-
-import 'presentation/movie/movie_screen.dart';
-import 'presentation/profile/setting_screen.dart';
-import 'presentation/promotion/promotion_screen.dart';
-import 'presentation/ticket/my_ticket_screen.dart';
+import './views/views.dart';
 
 /// App routes declare.
 
@@ -23,13 +16,12 @@ class LotteAppRoutes {
   static const String notificationRoute = '/profile/notification';
 
   static Map<String, Widget Function(BuildContext)> routes = {
-    movieRoute: (_) => MovieScreen(),
-    movieInformationRoute: (_) => MovieInformationScreen(),
-    cinemaRoute: (_) => CinemaScreen(),
-    myTicketRoute: (_) => MyTicketScreen(),
-    // bookTicketRoute: (_) => Screen(),
-    promotionRoute: (_) => PromotionScreen(),
-    profileRoute: (_) => ProfileScreen(),
-    settingRoute: (_) => SettingScreen(),
+    movieRoute: (_) => const MovieScreen(),
+    movieInformationRoute: (_) => const MovieInformationScreen(),
+    cinemaRoute: (_) => const CinemaScreen(),
+    myTicketRoute: (_) => const MyTicketScreen(),
+    promotionRoute: (_) => const PromotionScreen(),
+    profileRoute: (_) => const ProfileScreen(),
+    settingRoute: (_) => const SettingScreen(),
   };
 }

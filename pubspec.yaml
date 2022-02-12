@@ -1,5 +1,5 @@
 name: flutter_lotte_cinema_clone
-description: A Lotte Cinema Clone app.
+description: Dotte - A Lotte Cinema Clone app.
 
 publish_to: "none"
 version: 1.0.0+1
@@ -11,8 +11,6 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^2.2.0
-  bloc: ^8.0.2
-  flutter_bloc: ^8.0.1
   logger: ^1.0.0
   shared_preferences: ^2.0.9
   flutter_localizations:
@@ -21,11 +19,18 @@ dependencies:
   cached_network_image: ^3.2.0
   carousel_slider: ^4.0.0
   shimmer: ^2.0.0
+  the_movie_db_client:
+    path: ./packages/the_movie_db_client
+  dotte_repository:
+    path: ./packages/dotte_repository
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
+  build_runner: ^2.1.7
+  flutter_gen: ^4.1.5
+  mocktail: ^0.0.1-dev.12
 
 flutter:
   uses-material-design: true
@@ -34,6 +39,11 @@ flutter:
     - assets/images/
     - assets/icons/
     - fonts/
+
+flutter_gen:
+  colors:
+    inputs:
+      - assets/colors/colors.xml
 
 flutter_intl:
   enabled: true

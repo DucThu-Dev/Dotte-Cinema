@@ -38,17 +38,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "CinemaNearYou":
             MessageLookupByLibrary.simpleMessage("Cinema near you"),
         "Detail": MessageLookupByLibrary.simpleMessage("Detail"),
+        "DetailInformation":
+            MessageLookupByLibrary.simpleMessage("Detail information"),
+        "EstimateReleaseDate":
+            MessageLookupByLibrary.simpleMessage("Estimated release date"),
         "EventByCinema":
             MessageLookupByLibrary.simpleMessage("Event by cinema"),
         "Film": MessageLookupByLibrary.simpleMessage("Film"),
         "FilmInformation":
             MessageLookupByLibrary.simpleMessage("Film information"),
+        "Follow": MessageLookupByLibrary.simpleMessage("Follow"),
         "Gift": MessageLookupByLibrary.simpleMessage("Gift"),
         "Hot": MessageLookupByLibrary.simpleMessage("Hot"),
         "HotFilm": MessageLookupByLibrary.simpleMessage("Hot film"),
         "Hour": MessageLookupByLibrary.simpleMessage("hour"),
         "LikedCinema": MessageLookupByLibrary.simpleMessage("Liked cinema"),
         "Minutes": m0,
+        "MyGift": MessageLookupByLibrary.simpleMessage("My gift"),
         "MyTicket": MessageLookupByLibrary.simpleMessage("My tickets"),
         "NextFilm": MessageLookupByLibrary.simpleMessage("Next film"),
         "Notification": MessageLookupByLibrary.simpleMessage("Notification"),
@@ -66,6 +72,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "SeeAll": MessageLookupByLibrary.simpleMessage("See all"),
         "Setting": MessageLookupByLibrary.simpleMessage("Setting"),
         "SignIn": MessageLookupByLibrary.simpleMessage("Sign In"),
+        "SignOut": MessageLookupByLibrary.simpleMessage("Sign out"),
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "SpecialPromotion":
             MessageLookupByLibrary.simpleMessage("Special Promotion"),
@@ -76,6 +83,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "WatchedOutdated":
             MessageLookupByLibrary.simpleMessage("Watched/Outdated"),
         "Watching": MessageLookupByLibrary.simpleMessage("Watching"),
+        "WeDontFindAnyCinemaNearYourPosition":
+            MessageLookupByLibrary.simpleMessage(
+                "We don\'t find any cinema near your position."),
+        "YouDidntLikeAnyCinemaYet": MessageLookupByLibrary.simpleMessage(
+            "You did not like any cinema yet."),
         "YouNeedSignUpToDoAction": MessageLookupByLibrary.simpleMessage(
             "You need sign in to complete this action")
       };

@@ -1,11 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_lotte_cinema_clone/model/film.dart';
 import 'package:flutter_lotte_cinema_clone/resource/color_resource.dart';
+import 'package:the_movie_db_client/the_movie_db_client.dart';
 
-import '../constants.dart';
+import '../views/views.dart';
 
-extension FilmExtension on List<Film> {
+
+extension FilmExtension on List<Movie> {
   List<Widget> bannersWidgetMapFromFilms(BuildContext context) {
     return map(
       (film) => ClipRRect(

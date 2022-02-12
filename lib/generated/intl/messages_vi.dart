@@ -36,17 +36,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "Cinama": MessageLookupByLibrary.simpleMessage("Rạp"),
         "CinemaNearYou": MessageLookupByLibrary.simpleMessage("Rạp gần bạn"),
         "Detail": MessageLookupByLibrary.simpleMessage("Thông tin chi tiết"),
+        "DetailInformation":
+            MessageLookupByLibrary.simpleMessage("Thông tin chi tiết"),
+        "EstimateReleaseDate":
+            MessageLookupByLibrary.simpleMessage("Ngày khởi chiếu dự kiến"),
         "EventByCinema":
             MessageLookupByLibrary.simpleMessage("Sự kiện theo rạp"),
         "Film": MessageLookupByLibrary.simpleMessage("Phim"),
         "FilmInformation":
             MessageLookupByLibrary.simpleMessage("Thông tin phim"),
+        "Follow": MessageLookupByLibrary.simpleMessage("Quan tâm"),
         "Gift": MessageLookupByLibrary.simpleMessage("Quà tặng phim"),
         "Hot": MessageLookupByLibrary.simpleMessage("Hot"),
         "HotFilm": MessageLookupByLibrary.simpleMessage("Phim hot"),
         "Hour": MessageLookupByLibrary.simpleMessage("giờ"),
         "LikedCinema": MessageLookupByLibrary.simpleMessage("Rạp yêu thích"),
         "Minutes": m0,
+        "MyGift": MessageLookupByLibrary.simpleMessage("Quà của tôi"),
         "MyTicket": MessageLookupByLibrary.simpleMessage("Vé của tôi"),
         "NextFilm": MessageLookupByLibrary.simpleMessage("Phim sắp chiếu"),
         "Notification": MessageLookupByLibrary.simpleMessage("Thông báo"),
@@ -56,13 +62,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "PopcornCombo": MessageLookupByLibrary.simpleMessage("Combo bỏng ngô"),
         "Premium": MessageLookupByLibrary.simpleMessage("Premium"),
         "PriceTable": MessageLookupByLibrary.simpleMessage("Bảng giá vé"),
-        "Profile": MessageLookupByLibrary.simpleMessage("Quản lí"),
+        "Profile": MessageLookupByLibrary.simpleMessage("Quản lý"),
         "Promotion": MessageLookupByLibrary.simpleMessage("Khuyến mãi"),
         "Rate": MessageLookupByLibrary.simpleMessage("Đánh giá"),
         "SaleOffTicket": MessageLookupByLibrary.simpleMessage("Vé giảm giá"),
         "SeeAll": MessageLookupByLibrary.simpleMessage("Xem tất cả"),
         "Setting": MessageLookupByLibrary.simpleMessage("Cài đặt"),
         "SignIn": MessageLookupByLibrary.simpleMessage("Đăng kí"),
+        "SignOut": MessageLookupByLibrary.simpleMessage("Đăng xuất"),
         "SignUp": MessageLookupByLibrary.simpleMessage("Đăng nhập"),
         "SpecialPromotion":
             MessageLookupByLibrary.simpleMessage("Ưu đãi đặc biệt"),
@@ -73,6 +80,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "WatchedOutdated":
             MessageLookupByLibrary.simpleMessage("Đã xem/hết hạn"),
         "Watching": MessageLookupByLibrary.simpleMessage("Sắp xem"),
+        "WeDontFindAnyCinemaNearYourPosition":
+            MessageLookupByLibrary.simpleMessage(
+                "Chúng tôi không tìm thấy rạp phim nào gần vị trí của bạn."),
+        "YouDidntLikeAnyCinemaYet": MessageLookupByLibrary.simpleMessage(
+            "Bạn chưa thích rạp phim nào trước đây."),
         "YouNeedSignUpToDoAction": MessageLookupByLibrary.simpleMessage(
             "Bạn cần đăng nhập để hoàn thành hành động này")
       };

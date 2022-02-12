@@ -37,10 +37,15 @@
     "TotalSpending": "Total spending {year}",
     "Vip": "Vip",
     "Premium": "Premium",
-    "My gift": "My gift",
+    "MyGift": "My gift",
     "Watched": "Watched",
     "Rate": "Rate",
     "Setting": "Setting",
-    "Sign out": "Sign out",
-    "Notification": "Notification"
+    "SignOut": "Sign out",
+    "Notification": "Notification",
+    "WeDontFindAnyCinemaNearYourPosition": "We don't find any cinema near your position.",
+    "YouDidntLikeAnyCinemaYet": "You did not like any cinema yet.",
+    "DetailInformation": "Detail information",
+    "EstimateReleaseDate": "Estimated release date",
+    "Follow": "Follow"
 }

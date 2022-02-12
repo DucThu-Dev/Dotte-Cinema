@@ -430,7 +430,15 @@ class S {
     );
   }
 
-  // skipped getter for the 'My gift' key
+  /// `My gift`
+  String get MyGift {
+    return Intl.message(
+      'My gift',
+      name: 'MyGift',
+      desc: '',
+      args: [],
+    );
+  }
 
   /// `Watched`
   String get Watched {
@@ -462,13 +470,71 @@ class S {
     );
   }
 
-  // skipped getter for the 'Sign out' key
+  /// `Sign out`
+  String get SignOut {
+    return Intl.message(
+      'Sign out',
+      name: 'SignOut',
+      desc: '',
+      args: [],
+    );
+  }
 
   /// `Notification`
   String get Notification {
     return Intl.message(
       'Notification',
       name: 'Notification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We don't find any cinema near your position.`
+  String get WeDontFindAnyCinemaNearYourPosition {
+    return Intl.message(
+      'We don\'t find any cinema near your position.',
+      name: 'WeDontFindAnyCinemaNearYourPosition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You did not like any cinema yet.`
+  String get YouDidntLikeAnyCinemaYet {
+    return Intl.message(
+      'You did not like any cinema yet.',
+      name: 'YouDidntLikeAnyCinemaYet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Detail information`
+  String get DetailInformation {
+    return Intl.message(
+      'Detail information',
+      name: 'DetailInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Estimated release date`
+  String get EstimateReleaseDate {
+    return Intl.message(
+      'Estimated release date',
+      name: 'EstimateReleaseDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Follow`
+  String get Follow {
+    return Intl.message(
+      'Follow',
+      name: 'Follow',
       desc: '',
       args: [],
     );

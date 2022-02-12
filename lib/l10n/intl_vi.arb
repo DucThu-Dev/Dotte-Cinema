@@ -33,14 +33,19 @@
     "SignUp": "Đăng nhập",
     "SignIn": "Đăng kí",
     "YouNeedSignUpToDoAction": "Bạn cần đăng nhập để hoàn thành hành động này",
-    "Profile": "Quản lí",
+    "Profile": "Quản lý",
     "TotalSpending": "Tổng chi tiêu {year}",
     "Vip": "Vip",
     "Premium": "Premium",
-    "My gift": "Quà của tôi",
+    "MyGift": "Quà của tôi",
     "Watched": "Phim đã xem",
     "Rate": "Đánh giá",
     "Setting": "Cài đặt",
-    "Sign out": "Đăng xuất",
-    "Notification": "Thông báo"
+    "SignOut": "Đăng xuất",
+    "Notification": "Thông báo",
+    "WeDontFindAnyCinemaNearYourPosition": "Chúng tôi không tìm thấy rạp phim nào gần vị trí của bạn.",
+    "YouDidntLikeAnyCinemaYet": "Bạn chưa thích rạp phim nào trước đây.",
+    "DetailInformation": "Thông tin chi tiết",
+    "EstimateReleaseDate": "Ngày khởi chiếu dự kiến",
+    "Follow": "Quan tâm"
 }
