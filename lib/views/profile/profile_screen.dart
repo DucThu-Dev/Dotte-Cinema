@@ -1,3 +1,4 @@
+import 'package:dotte_repository/dotte_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_lotte_cinema_clone/generated/l10n.dart';
 

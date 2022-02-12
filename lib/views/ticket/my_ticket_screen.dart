@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lotte_cinema_clone/generated/l10n.dart';
-import 'package:flutter_lotte_cinema_clone/resource/color_resource.dart';
 
 List<Map<String, dynamic>> _ticketTabData = [
   {

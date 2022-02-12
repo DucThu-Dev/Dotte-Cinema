@@ -21,8 +21,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Movie> films = Movie.fromSample();
-    List<Cinema> theaters = Cinema.fromSample();
+    List<Movie> movies = Movie.fromSample();
+    List<Cinema> cinemas = Cinema.fromSample();
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
           shrinkWrap: true,
           children: [
             /// Banner Films Section.
-            FilmBannerWidget(movies: films),
+            FilmBannerWidget(movies: movies),
 
             /// Performing Films Section.
             BodyTemplateWidget(
@@ -74,14 +74,14 @@ class HomeScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   addAutomaticKeepAlives: true,
                   itemBuilder: (_, index) => FilmPosterWidget(
-                    posterUrl: films[index].posterUrl,
-                    filmTitle: films[index].title,
-                    duration: S.current.Minutes(films[index].duration),
-                    filmId: films[index].id,
+                    posterUrl: movies[index].posterUrl,
+                    filmTitle: movies[index].title,
+                    duration: S.current.Minutes(movies[index].duration),
+                    filmId: movies[index].id,
                     bookTicketAction: () {},
                     onPosterClickAction: () {},
                   ),
-                  itemCount: films.length,
+                  itemCount: movies.length,
                 ),
               ),
             ),
@@ -99,11 +99,11 @@ class HomeScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   addAutomaticKeepAlives: true,
                   itemBuilder: (_, index) => TheaterPosterWidget(
-                    theaterId: theaters[index].id,
-                    theaterImageUrl: theaters[index].imageUrl,
-                    theaterName: theaters[index].name,
+                    theaterId: cinemas[index].id,
+                    theaterImageUrl: cinemas[index].imageUrl,
+                    theaterName: cinemas[index].name,
                   ),
-                  itemCount: theaters.length,
+                  itemCount: cinemas.length,
                 ),
               ),
             ),

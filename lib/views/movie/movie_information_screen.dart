@@ -46,11 +46,12 @@ class MovieInformationScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.headline3,
         ),
         Text(
-          S.of(context).Minutes(movie.duration),
+          ///TODO: Re-modify UI - duration of the movie
+          S.of(context).Minutes(333333333),
           style: Theme.of(context).textTheme.bodyText2,
         ),
         Text(
-          movie.introduce,
+          movie.overview,
           style: Theme.of(context).textTheme.bodyText1,
         )
       ],

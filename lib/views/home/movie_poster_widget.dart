@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_lotte_cinema_clone/generated/l10n.dart';
 import 'package:shimmer/shimmer.dart';
 
+import '../../theme/color_name.dart';
 import '../../type_declare.dart';
 import '../constants.dart';
 

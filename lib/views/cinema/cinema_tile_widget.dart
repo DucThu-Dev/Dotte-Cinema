@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_lotte_cinema_clone/resource/color_resource.dart';
+import 'package:flutter_lotte_cinema_clone/theme/color_name.dart';
 
 import '../constants.dart';
 
@@ -82,8 +82,8 @@ class CinemaTileWidget extends StatelessWidget {
                       icon: Icon(
                         Icons.favorite,
                         color: liked
-                            ? ColorResource.red
-                            : ColorResource.greyPrimary,
+                            ? Colors.red
+                            : ColorName.greyPrimary,
                       ),
                     ),
                   ],
@@ -98,7 +98,7 @@ class CinemaTileWidget extends StatelessWidget {
                         children: [
                           const Icon(
                             Icons.star,
-                            color: ColorResource.yellow,
+                            color: Colors.yellow,
                             size: kSmallIconSize,
                           ),
                           const SizedBox(width: kPaddingDefault1),

@@ -40,10 +40,5 @@ flutter:
     - assets/icons/
     - fonts/
 
-flutter_gen:
-  colors:
-    inputs:
-      - assets/colors/colors.xml
-
 flutter_intl:
   enabled: true

@@ -38,4 +38,16 @@ class Movie {
   );
 
   factory Movie.fromJson(Map<String, dynamic> json) => _$MovieFromJson(json);
+
+  /// Get url of the poster with w500 size. Bester for less resolution images.
+  String get posterUrlW500 => 'https://image.tmdb.org/t/p/w500$posterPath';
+
+  /// Get url of the original size of the poster.
+  String get posterUrl => 'https://image.tmdb.org/t/p/original$posterPath';
+
+    /// Get url of the poster with w500 size. Bester for less resolution images.
+  String get backdropUrlW500 => 'https://image.tmdb.org/t/p/w500$backdropPath';
+
+  /// Get url of the original size of the poster.
+  String get backdropUrl => 'https://image.tmdb.org/t/p/original$backdropPath';
 }

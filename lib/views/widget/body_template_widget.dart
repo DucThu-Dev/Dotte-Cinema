@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lotte_cinema_clone/generated/l10n.dart';
-import 'package:flutter_lotte_cinema_clone/resource/color_resource.dart';
+
+import '../../theme/color_name.dart';
 
 ///This widget is used for multibody have the same structure
 class BodyTemplateWidget extends StatelessWidget {

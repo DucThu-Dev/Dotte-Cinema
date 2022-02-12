@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_lotte_cinema_clone/resource/color_resource.dart';
 
+import '../../theme/color_name.dart';
 import '../constants.dart';
 
 class DefaultDividerWidget extends StatelessWidget {
@@ -17,7 +17,7 @@ class DefaultDividerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Divider(
       thickness: thickness,
-      color: ColorResource.dividerColor,
+      color: ColorName.dividerColor,
       indent: indent,
       endIndent: indent,
     );

@@ -18,7 +18,7 @@ class FilmBannerWidgetState extends State<FilmBannerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final itemsSlider = widget.movies.bannersWidgetMapFromFilms(context);
+    final itemsSlider = widget.movies.bannersWidgetMapFromMovies(context);
 
     return Container(
       padding: const EdgeInsets.all(8),

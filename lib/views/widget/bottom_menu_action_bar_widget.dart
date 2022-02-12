@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lotte_cinema_clone/generated/l10n.dart';
-import 'package:flutter_lotte_cinema_clone/resource/color_resource.dart';
 import '../../routes.dart';
 
 List<Map<String, dynamic>> bottomBarItemData = [
@@ -49,18 +48,14 @@ class BottomMenuActionBarWidget extends StatelessWidget {
       type: BottomNavigationBarType.fixed,
       showSelectedLabels: true,
       showUnselectedLabels: true,
-      selectedIconTheme: const IconThemeData(color: ColorResource.red),
-      selectedItemColor: ColorResource.red,
-      selectedLabelStyle: Theme.of(context)
-          .textTheme
-          .bodyText1!
-          .copyWith(color: ColorResource.red),
-      unselectedLabelStyle: Theme.of(context)
-          .textTheme
-          .bodyText1!
-          .copyWith(color: ColorResource.red),
-      unselectedItemColor: ColorResource.red,
-      unselectedIconTheme: const IconThemeData(color: ColorResource.red),
+      selectedIconTheme: const IconThemeData(color: Colors.red),
+      selectedItemColor: Colors.red,
+      selectedLabelStyle:
+          Theme.of(context).textTheme.bodyText1!.copyWith(color: Colors.red),
+      unselectedLabelStyle:
+          Theme.of(context).textTheme.bodyText1!.copyWith(color: Colors.red),
+      unselectedItemColor: Colors.red,
+      unselectedIconTheme: const IconThemeData(color: Colors.red),
       onTap: (pos) =>
           Navigator.of(context).pushNamed(bottomBarItemData[pos]['route']),
     );
