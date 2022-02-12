@@ -1,0 +1,26 @@
+name: the_movie_db_client
+description: Package for Dotte API lib.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  dio: ^4.0.4
+  flutter:
+    sdk: flutter
+  retrofit: ^3.0.1+1
+  json_annotation: ^4.4.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  retrofit_generator: ^4.0.1
+  flutter_lints: ^1.0.0
+  build_runner: ^2.1.7
+  mocktail: ^0.0.1-dev.12
+  json_serializable: ^6.1.4
+
+flutter:
