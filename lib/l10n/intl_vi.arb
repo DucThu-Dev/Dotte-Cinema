@@ -33,7 +33,7 @@
     "SignUp": "Đăng nhập",
     "SignIn": "Đăng kí",
     "YouNeedSignUpToDoAction": "Bạn cần đăng nhập để hoàn thành hành động này",
-    "Profile": "Quản lý",
+    "Profile": "Hồ sơ",
     "TotalSpending": "Tổng chi tiêu {year}",
     "Vip": "Vip",
     "Premium": "Premium",
@@ -47,5 +47,14 @@
     "YouDidntLikeAnyCinemaYet": "Bạn chưa thích rạp phim nào trước đây.",
     "DetailInformation": "Thông tin chi tiết",
     "EstimateReleaseDate": "Ngày khởi chiếu dự kiến",
-    "Follow": "Quan tâm"
+    "Follow": "Quan tâm",
+    "ErrorOccurred": "Ồ không, đã có lỗi xảy ra.\nXin hãy thử lại sau.",
+    "BookTicketComplete": "Đặt vé thành công.",
+    "Popularity": "Độ nổi tiếng",
+    "Language": "Ngôn ngữ",
+    "ShareMessage": "Xem phim {movie} cùng tôi tại Dotte Cinema.",
+    "NoPromotionYet": "Hiện không có khuyễn mãi nào.",
+    "NoEventAvailable": "Hiện không có sự kiện nào.",
+    "YouHaveNoTicket": "Bạn vẫn chưa đặt vé nào.",
+    "NoNotificationYet": "Bạn không có thông báo nào."
 }

@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:retrofit/http.dart';
 
+import '../models/models.dart';
 import '../models/trending_movie_week.dart';
 
 part 'the_movie_db_api.g.dart';
@@ -10,5 +11,10 @@ abstract class TheMovieDbApi {
   factory TheMovieDbApi(Dio dio, {String baseUrl}) = _TheMovieDbApi;
 
   @GET('/trending/movie/week')
-  Future<TrendingMovieWeek> getTrendingMoviesInWeek(@Query('api_key') String apiKey);
+  Future<TrendingMovieWeek> getTrendingMoviesInWeek(
+      @Query('api_key') String apiKey);
+
+  @GET('/movie/{id}')
+  Future<Movie> getMovieDetails(
+      @Path('id') int id, @Query('api_key') String apiKey);
 }

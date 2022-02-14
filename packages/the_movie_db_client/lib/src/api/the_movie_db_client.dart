@@ -14,4 +14,8 @@ class TheMovieDbClient {
     final result = await api.getTrendingMoviesInWeek(apiKey);
     return result.movies;
   }
+
+  Future<Movie> getMovieInformationWithId(int movieId) async {
+    return await api.getMovieDetails(movieId, apiKey);
+  }
 }

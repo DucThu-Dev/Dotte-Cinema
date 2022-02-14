@@ -33,8 +33,12 @@ class MyTicketScreen extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              Container(),
-              Container(),
+              Center(
+                child: Text(S.of(context).YouHaveNoTicket),
+              ),
+              Center(
+                child: Text(S.of(context).YouHaveNoTicket),
+              ),
             ],
           )),
     );

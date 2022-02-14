@@ -10,15 +10,33 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^2.2.0
-  logger: ^1.0.0
-  shared_preferences: ^2.0.9
+
+  # Typo and internationalization
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
+  google_fonts: ^2.2.0
+
+  # UI libraries
   cached_network_image: ^3.2.0
   carousel_slider: ^4.0.0
   shimmer: ^2.0.0
+
+  # State managements
+  # flutter_hooks: ^0.18.2+1
+  riverpod: ^1.0.3
+  flutter_riverpod: ^1.0.3
+  # hooks_riverpod: ^1.0.3
+
+  # Other plugins
+  logger: ^1.0.0
+  shared_preferences: ^2.0.9
+  share_plus: ^3.0.4
+  image_picker: ^0.8.4+8
+  image_cropper: ^1.4.1
+  universal_platform: ^1.0.0+1
+
+  # Application packages
   the_movie_db_client:
     path: ./packages/the_movie_db_client
   dotte_repository:

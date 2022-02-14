@@ -1,28 +1,18 @@
-import 'package:dotte_repository/dotte_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_lotte_cinema_clone/gen/assets.gen.dart';
 import 'package:flutter_lotte_cinema_clone/generated/l10n.dart';
 import 'package:flutter_lotte_cinema_clone/theme/app_theme_data.dart';
-import 'package:the_movie_db_client/the_movie_db_client.dart';
 
-import '../../routes.dart';
 import '../views.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
+  /// AppBar menu button action.
   void menuTopBtnOnClick(BuildContext context) {}
-
-  void seeAllPerformingFilmAction(BuildContext context) =>
-      Navigator.of(context).pushNamed(LotteAppRoutes.movieRoute);
-
-  void seeAllCinemaNearYouAction(BuildContext context) =>
-      Navigator.of(context).pushNamed(LotteAppRoutes.cinemaRoute);
 
   @override
   Widget build(BuildContext context) {
-    List<Movie> movies = Movie.fromSample();
-    List<Cinema> cinemas = Cinema.fromSample();
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
@@ -58,54 +48,20 @@ class HomeScreen extends StatelessWidget {
         width: size.width,
         child: ListView(
           shrinkWrap: true,
-          children: [
-            /// Banner Films Section.
-            FilmBannerWidget(movies: movies),
+          children: <Widget>[
+            /// Banner Movies Section.
+            const FilmBannerWidget(),
 
-            /// Performing Films Section.
-            BodyTemplateWidget(
-              title: S.of(context).PerformingFilm,
-              seeAllActionOnClick: () => seeAllPerformingFilmAction(context),
-              body: SizedBox(
-                width: size.width,
-                height: kMoviePosterHeight + kMoviePosterBodyHeight,
-                child: ListView.builder(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  addAutomaticKeepAlives: true,
-                  itemBuilder: (_, index) => FilmPosterWidget(
-                    posterUrl: movies[index].posterUrl,
-                    filmTitle: movies[index].title,
-                    duration: S.current.Minutes(movies[index].duration),
-                    filmId: movies[index].id,
-                    bookTicketAction: () {},
-                    onPosterClickAction: () {},
-                  ),
-                  itemCount: movies.length,
-                ),
-              ),
-            ),
+            /// Performing Movies Section.
+            const PerformingMovieWidget(),
+
             const DefaultDividerWidget(),
 
             /// Cinema near you Section.
+
             BodyTemplateWidget(
               title: S.of(context).CinemaNearYou,
-              seeAllActionOnClick: () => seeAllCinemaNearYouAction(context),
-              body: SizedBox(
-                width: size.width,
-                height: kCinemaPosterSize + kCinemaPosterBodyHeight,
-                child: ListView.builder(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  addAutomaticKeepAlives: true,
-                  itemBuilder: (_, index) => TheaterPosterWidget(
-                    theaterId: cinemas[index].id,
-                    theaterImageUrl: cinemas[index].imageUrl,
-                    theaterName: cinemas[index].name,
-                  ),
-                  itemCount: cinemas.length,
-                ),
-              ),
+              body: const CinemaListWidget(),
             ),
           ],
         ),

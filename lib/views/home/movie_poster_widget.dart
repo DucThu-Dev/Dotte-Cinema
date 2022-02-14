@@ -7,26 +7,26 @@ import '../../theme/color_name.dart';
 import '../../type_declare.dart';
 import '../constants.dart';
 
-class FilmPosterWidget extends StatelessWidget {
-  const FilmPosterWidget({
+class MoviePosterWidget extends StatelessWidget {
+  const MoviePosterWidget({
     Key? key,
     required this.posterUrl,
-    required this.filmTitle,
+    required this.movieTitle,
     required this.duration,
-    required this.filmId,
+    required this.movieId,
     required this.onPosterClickAction,
     required this.bookTicketAction,
   })  : _loading = false,
         super(key: key);
 
   /// Id of the film.
-  final String filmId;
+  final int movieId;
 
   /// Poster url of the film.
   final String posterUrl;
 
   /// Title of the film.
-  final String filmTitle;
+  final String movieTitle;
 
   /// Duration of the film.
   final String duration;
@@ -41,10 +41,10 @@ class FilmPosterWidget extends StatelessWidget {
   final bool _loading;
 
   /// Template Theater Poster Widget with Shimmer efffect showing when application loading data.
-  const FilmPosterWidget.loading({Key? key})
-      : filmId = empty,
+  const MoviePosterWidget.loading({Key? key})
+      : movieId = zero,
         posterUrl = empty,
-        filmTitle = empty,
+        movieTitle = empty,
         duration = empty,
         onPosterClickAction = null,
         bookTicketAction = null,
@@ -107,25 +107,30 @@ class FilmPosterWidget extends StatelessWidget {
 
         /// Poster builder section.
         Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
             width: kMoviePosterWidth,
             height: kMoviePosterHeight + kMoviePosterBodyHeight,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(kImageBorderRadius),
-                  child: CachedNetworkImage(
-                    imageUrl: posterUrl,
-                    height: kMoviePosterHeight,
-                    width: kMoviePosterWidth,
-                    fit: BoxFit.fitHeight,
+                GestureDetector(
+                  onTap: onPosterClickAction,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(kImageBorderRadius),
+                    child: CachedNetworkImage(
+                      imageUrl: posterUrl,
+                      height: kMoviePosterHeight,
+                      width: kMoviePosterWidth,
+                      fit: BoxFit.fitHeight,
+                    ),
                   ),
                 ),
-                Text(
-                  filmTitle,
-                  style: Theme.of(context).textTheme.headline4,
+                Expanded(
+                  child: Text(
+                    movieTitle,
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
                 ),
                 Text(
                   duration,

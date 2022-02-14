@@ -2,23 +2,40 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'movie.g.dart';
 
+/// The Movie object serialized from Json, retrieved from TheMovieDB API.
 @JsonSerializable(
   includeIfNull: false,
   createToJson: false,
 )
 class Movie {
+
+  /// The id  of the movie - belong to TheMovieDb API
   final int id;
+
+  /// The path of the movie, example: /kqjL17yufvn9OVLyXYpvtyrFfak.jpg
+  /// The domain: https://image.tmdb.org/t/p/original
   final String? posterPath;
+
   final bool adult;
+
   final String overview;
+
   final String releaseDate;
+
   final String originalTitle;
+
   final String originalLanguage;
+
   final String title;
+
   final String? backdropPath;
+
   final num popularity;
+
   final int voteCount;
+
   final bool video;
+
   final num voteAverage;
 
   Movie(

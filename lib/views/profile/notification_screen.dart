@@ -10,7 +10,9 @@ class NotificationScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(S.of(context).Notification),
       ),
-      body: Container(),
+      body: Center(
+        child: Text(S.of(context).YouHaveNoTicket),
+      ),
     );
   }
 }

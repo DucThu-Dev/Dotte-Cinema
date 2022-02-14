@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 const double kMoviePosterHeight = 325;
 
 /// Default height for Movie Poster 's Detail body data - the bottom part below Poster image.
-const double kMoviePosterBodyHeight = 100;
+const double kMoviePosterBodyHeight = 110;
 
 /// Default width for Movie 's Poster image.
 const double kMoviePosterWidth = 210;
@@ -47,6 +47,9 @@ const Duration kAnimationDuration = Duration(milliseconds: 250);
 /// Empty placeholder for text.
 const String empty = '';
 
+/// Zero placeholder for num.
+const int zero = 0;
+
 /// Text height and width replica for Shimmer effect.
 const double kTextHeight = 16;
 const double kTextWidth = 160;
@@ -57,6 +60,9 @@ const double kButtonHeight = 36;
 /// Small icon size.
 const double kSmallIconSize = 18;
 
+/// Large icon size for avatar.
+const double kLargeIconSize = 40;
+
 /// Divider thickness size.
 const double kDividerSize2 = 2;
 const double kDividerSize4 = 4;
@@ -64,3 +70,18 @@ const double kDividerSize12 = 12;
 
 /// Divider 's indent size.
 const double kIndentSize = 32;
+
+/// Total Movie poster should show during loading process for Mobile.
+const int kMoviePosterLoadingCountMobile = 3;
+
+/// Total Movie poster should show during loading process for Tablet.
+const int kMoviePosterLoadingCountTablet = 4;
+
+/// Total Movie poster should show during loading process for Web.
+const int kMoviePosterLoadingCountWeb = 6;
+
+/// Banner height for mobile.
+const double kBannerHeightLoadingMobile = 100;
+
+/// Banner aspectRatio
+const double kBannerAspectRatio = 1.78;

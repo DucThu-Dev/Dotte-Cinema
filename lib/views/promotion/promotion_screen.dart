@@ -24,27 +24,32 @@ class PromotionScreen extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-          appBar: AppBar(
-            title: Text(S.of(context).Promotion),
-            actions: [
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.menu,
-                ),
+        appBar: AppBar(
+          title: Text(S.of(context).Promotion),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.menu,
               ),
-            ],
-            bottom: TabBar(
-              tabs: _tabs,
-              indicatorPadding: const EdgeInsets.symmetric(horizontal: 24),
             ),
+          ],
+          bottom: TabBar(
+            tabs: _tabs,
+            indicatorPadding: const EdgeInsets.symmetric(horizontal: 24),
           ),
-          body: TabBarView(
-            children: [
-              Container(),
-              Container(),
-            ],
-          )),
+        ),
+        body: TabBarView(
+          children: [
+            Center(
+              child: Text(S.of(context).NoPromotionYet),
+            ),
+            Center(
+              child: Text(S.of(context).NoEventAvailable),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

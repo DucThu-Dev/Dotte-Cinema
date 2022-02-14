@@ -3,7 +3,7 @@ import './views/views.dart';
 
 /// App routes declare.
 
-class LotteAppRoutes {
+class DotteAppRoutes {
   static const String defaultRoute = '/';
   static const String movieRoute = '/cinema';
   static const String movieInformationRoute = '/filmInformation';
@@ -17,7 +17,6 @@ class LotteAppRoutes {
 
   static Map<String, Widget Function(BuildContext)> routes = {
     movieRoute: (_) => const MovieScreen(),
-    movieInformationRoute: (_) => const MovieInformationScreen(),
     cinemaRoute: (_) => const CinemaScreen(),
     myTicketRoute: (_) => const MyTicketScreen(),
     promotionRoute: (_) => const PromotionScreen(),

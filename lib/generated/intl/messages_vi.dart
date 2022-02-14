@@ -22,7 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m0(minute) => "${minute} phút";
 
-  static String m1(year) => "Tổng chi tiêu ${year}";
+  static String m1(movie) => "Xem phim ${movie} cùng tôi tại Dotte Cinema.";
+
+  static String m2(year) => "Tổng chi tiêu ${year}";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
@@ -30,6 +32,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "AppTitle": MessageLookupByLibrary.simpleMessage("LOTTE"),
         "BookNow": MessageLookupByLibrary.simpleMessage("Đặt vé ngay"),
         "BookTicket": MessageLookupByLibrary.simpleMessage("Đặt vé"),
+        "BookTicketComplete":
+            MessageLookupByLibrary.simpleMessage("Đặt vé thành công."),
         "BookTicketNow": MessageLookupByLibrary.simpleMessage("Đặt vé ngay"),
         "BookWithPopcornAndDrinkingCombo": MessageLookupByLibrary.simpleMessage(
             "Đặt cùng combo bỏng ngô và đồ uống"),
@@ -38,6 +42,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Detail": MessageLookupByLibrary.simpleMessage("Thông tin chi tiết"),
         "DetailInformation":
             MessageLookupByLibrary.simpleMessage("Thông tin chi tiết"),
+        "ErrorOccurred": MessageLookupByLibrary.simpleMessage(
+            "Ồ không, đã có lỗi xảy ra.\nXin hãy thử lại sau."),
         "EstimateReleaseDate":
             MessageLookupByLibrary.simpleMessage("Ngày khởi chiếu dự kiến"),
         "EventByCinema":
@@ -50,30 +56,39 @@ class MessageLookup extends MessageLookupByLibrary {
         "Hot": MessageLookupByLibrary.simpleMessage("Hot"),
         "HotFilm": MessageLookupByLibrary.simpleMessage("Phim hot"),
         "Hour": MessageLookupByLibrary.simpleMessage("giờ"),
+        "Language": MessageLookupByLibrary.simpleMessage("Ngôn ngữ"),
         "LikedCinema": MessageLookupByLibrary.simpleMessage("Rạp yêu thích"),
         "Minutes": m0,
         "MyGift": MessageLookupByLibrary.simpleMessage("Quà của tôi"),
         "MyTicket": MessageLookupByLibrary.simpleMessage("Vé của tôi"),
         "NextFilm": MessageLookupByLibrary.simpleMessage("Phim sắp chiếu"),
+        "NoEventAvailable":
+            MessageLookupByLibrary.simpleMessage("Hiện không có sự kiện nào."),
+        "NoNotificationYet":
+            MessageLookupByLibrary.simpleMessage("Bạn không có thông báo nào."),
+        "NoPromotionYet": MessageLookupByLibrary.simpleMessage(
+            "Hiện không có khuyễn mãi nào."),
         "Notification": MessageLookupByLibrary.simpleMessage("Thông báo"),
         "PerformingFilm":
             MessageLookupByLibrary.simpleMessage("Phim đang chiếu"),
         "PickChair": MessageLookupByLibrary.simpleMessage("Chọn ghế"),
         "PopcornCombo": MessageLookupByLibrary.simpleMessage("Combo bỏng ngô"),
+        "Popularity": MessageLookupByLibrary.simpleMessage("Độ nổi tiếng"),
         "Premium": MessageLookupByLibrary.simpleMessage("Premium"),
         "PriceTable": MessageLookupByLibrary.simpleMessage("Bảng giá vé"),
-        "Profile": MessageLookupByLibrary.simpleMessage("Quản lý"),
+        "Profile": MessageLookupByLibrary.simpleMessage("Hồ sơ"),
         "Promotion": MessageLookupByLibrary.simpleMessage("Khuyến mãi"),
         "Rate": MessageLookupByLibrary.simpleMessage("Đánh giá"),
         "SaleOffTicket": MessageLookupByLibrary.simpleMessage("Vé giảm giá"),
         "SeeAll": MessageLookupByLibrary.simpleMessage("Xem tất cả"),
         "Setting": MessageLookupByLibrary.simpleMessage("Cài đặt"),
+        "ShareMessage": m1,
         "SignIn": MessageLookupByLibrary.simpleMessage("Đăng kí"),
         "SignOut": MessageLookupByLibrary.simpleMessage("Đăng xuất"),
         "SignUp": MessageLookupByLibrary.simpleMessage("Đăng nhập"),
         "SpecialPromotion":
             MessageLookupByLibrary.simpleMessage("Ưu đãi đặc biệt"),
-        "TotalSpending": m1,
+        "TotalSpending": m2,
         "VND": MessageLookupByLibrary.simpleMessage("VNĐ"),
         "Vip": MessageLookupByLibrary.simpleMessage("Vip"),
         "Watched": MessageLookupByLibrary.simpleMessage("Phim đã xem"),
@@ -85,6 +100,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Chúng tôi không tìm thấy rạp phim nào gần vị trí của bạn."),
         "YouDidntLikeAnyCinemaYet": MessageLookupByLibrary.simpleMessage(
             "Bạn chưa thích rạp phim nào trước đây."),
+        "YouHaveNoTicket":
+            MessageLookupByLibrary.simpleMessage("Bạn vẫn chưa đặt vé nào."),
         "YouNeedSignUpToDoAction": MessageLookupByLibrary.simpleMessage(
             "Bạn cần đăng nhập để hoàn thành hành động này")
       };

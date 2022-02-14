@@ -6,27 +6,27 @@ List<Map<String, dynamic>> bottomBarItemData = [
   {
     "title": S.current.Film,
     "icon": Icons.videocam,
-    "route": LotteAppRoutes.movieRoute,
+    "route": DotteAppRoutes.movieRoute,
   },
   {
     "title": S.current.Cinama,
     "icon": Icons.theaters,
-    "route": LotteAppRoutes.cinemaRoute,
+    "route": DotteAppRoutes.cinemaRoute,
   },
   {
     "title": S.current.MyTicket,
     "icon": Icons.confirmation_number,
-    "route": LotteAppRoutes.myTicketRoute
+    "route": DotteAppRoutes.myTicketRoute
   },
   {
     "title": S.current.Promotion,
     "icon": Icons.sell,
-    "route": LotteAppRoutes.promotionRoute,
+    "route": DotteAppRoutes.promotionRoute,
   },
   {
     "title": S.current.Profile,
     "icon": Icons.account_circle,
-    "route": LotteAppRoutes.profileRoute,
+    "route": DotteAppRoutes.profileRoute,
   },
 ];
 

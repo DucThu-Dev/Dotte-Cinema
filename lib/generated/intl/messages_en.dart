@@ -22,7 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m0(minute) => "${minute} minutes";
 
-  static String m1(year) => "Total spending ${year}";
+  static String m1(movie) => "Go with me for ${movie} movie at Dotte Cinema.";
+
+  static String m2(year) => "Total spending ${year}";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
@@ -30,6 +32,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "AppTitle": MessageLookupByLibrary.simpleMessage("LOTTE"),
         "BookNow": MessageLookupByLibrary.simpleMessage("Book now"),
         "BookTicket": MessageLookupByLibrary.simpleMessage("Book ticket"),
+        "BookTicketComplete":
+            MessageLookupByLibrary.simpleMessage("Book ticket completed."),
         "BookTicketNow":
             MessageLookupByLibrary.simpleMessage("Book Ticket Now"),
         "BookWithPopcornAndDrinkingCombo": MessageLookupByLibrary.simpleMessage(
@@ -40,6 +44,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Detail": MessageLookupByLibrary.simpleMessage("Detail"),
         "DetailInformation":
             MessageLookupByLibrary.simpleMessage("Detail information"),
+        "ErrorOccurred": MessageLookupByLibrary.simpleMessage(
+            "Unfortunately, some errors occurred.\nPlease try again later."),
         "EstimateReleaseDate":
             MessageLookupByLibrary.simpleMessage("Estimated release date"),
         "EventByCinema":
@@ -52,16 +58,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "Hot": MessageLookupByLibrary.simpleMessage("Hot"),
         "HotFilm": MessageLookupByLibrary.simpleMessage("Hot film"),
         "Hour": MessageLookupByLibrary.simpleMessage("hour"),
+        "Language": MessageLookupByLibrary.simpleMessage("Language"),
         "LikedCinema": MessageLookupByLibrary.simpleMessage("Liked cinema"),
         "Minutes": m0,
         "MyGift": MessageLookupByLibrary.simpleMessage("My gift"),
         "MyTicket": MessageLookupByLibrary.simpleMessage("My tickets"),
         "NextFilm": MessageLookupByLibrary.simpleMessage("Next film"),
+        "NoEventAvailable":
+            MessageLookupByLibrary.simpleMessage("No event available."),
+        "NoNotificationYet":
+            MessageLookupByLibrary.simpleMessage("You have no notification."),
+        "NoPromotionYet":
+            MessageLookupByLibrary.simpleMessage("No promotion available."),
         "Notification": MessageLookupByLibrary.simpleMessage("Notification"),
         "PerformingFilm":
             MessageLookupByLibrary.simpleMessage("Performing Film"),
         "PickChair": MessageLookupByLibrary.simpleMessage("Pick chair"),
         "PopcornCombo": MessageLookupByLibrary.simpleMessage("Popcorn combo"),
+        "Popularity": MessageLookupByLibrary.simpleMessage("Popularity"),
         "Premium": MessageLookupByLibrary.simpleMessage("Premium"),
         "PriceTable": MessageLookupByLibrary.simpleMessage("Price table"),
         "Profile": MessageLookupByLibrary.simpleMessage("Profile"),
@@ -71,12 +85,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Sale off ticket"),
         "SeeAll": MessageLookupByLibrary.simpleMessage("See all"),
         "Setting": MessageLookupByLibrary.simpleMessage("Setting"),
+        "ShareMessage": m1,
         "SignIn": MessageLookupByLibrary.simpleMessage("Sign In"),
         "SignOut": MessageLookupByLibrary.simpleMessage("Sign out"),
         "SignUp": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "SpecialPromotion":
             MessageLookupByLibrary.simpleMessage("Special Promotion"),
-        "TotalSpending": m1,
+        "TotalSpending": m2,
         "VND": MessageLookupByLibrary.simpleMessage("VNĐ"),
         "Vip": MessageLookupByLibrary.simpleMessage("Vip"),
         "Watched": MessageLookupByLibrary.simpleMessage("Watched"),
@@ -88,6 +103,8 @@ class MessageLookup extends MessageLookupByLibrary {
                 "We don\'t find any cinema near your position."),
         "YouDidntLikeAnyCinemaYet": MessageLookupByLibrary.simpleMessage(
             "You did not like any cinema yet."),
+        "YouHaveNoTicket":
+            MessageLookupByLibrary.simpleMessage("You don\'t have any ticket."),
         "YouNeedSignUpToDoAction": MessageLookupByLibrary.simpleMessage(
             "You need sign in to complete this action")
       };

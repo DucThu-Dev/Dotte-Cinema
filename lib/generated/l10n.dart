@@ -539,6 +539,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Unfortunately, some errors occurred.\nPlease try again later.`
+  String get ErrorOccurred {
+    return Intl.message(
+      'Unfortunately, some errors occurred.\nPlease try again later.',
+      name: 'ErrorOccurred',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Book ticket completed.`
+  String get BookTicketComplete {
+    return Intl.message(
+      'Book ticket completed.',
+      name: 'BookTicketComplete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Popularity`
+  String get Popularity {
+    return Intl.message(
+      'Popularity',
+      name: 'Popularity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Language`
+  String get Language {
+    return Intl.message(
+      'Language',
+      name: 'Language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Go with me for {movie} movie at Dotte Cinema.`
+  String ShareMessage(Object movie) {
+    return Intl.message(
+      'Go with me for $movie movie at Dotte Cinema.',
+      name: 'ShareMessage',
+      desc: '',
+      args: [movie],
+    );
+  }
+
+  /// `No promotion available.`
+  String get NoPromotionYet {
+    return Intl.message(
+      'No promotion available.',
+      name: 'NoPromotionYet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No event available.`
+  String get NoEventAvailable {
+    return Intl.message(
+      'No event available.',
+      name: 'NoEventAvailable',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You don't have any ticket.`
+  String get YouHaveNoTicket {
+    return Intl.message(
+      'You don\'t have any ticket.',
+      name: 'YouHaveNoTicket',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You have no notification.`
+  String get NoNotificationYet {
+    return Intl.message(
+      'You have no notification.',
+      name: 'NoNotificationYet',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

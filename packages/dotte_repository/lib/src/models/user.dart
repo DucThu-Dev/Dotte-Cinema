@@ -12,7 +12,7 @@ class User {
   final String id;
   final String name;
   final String phoneNumber;
-  final String avatarUrl;
+  final String? avatarUrl;
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 }

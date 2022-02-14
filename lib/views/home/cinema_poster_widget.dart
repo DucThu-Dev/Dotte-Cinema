@@ -5,31 +5,31 @@ import 'package:shimmer/shimmer.dart';
 import '../../theme/color_name.dart';
 import '../constants.dart';
 
-class TheaterPosterWidget extends StatelessWidget {
-  const TheaterPosterWidget({
+class CinemaPosterWidget extends StatelessWidget {
+  const CinemaPosterWidget({
     Key? key,
-    required this.theaterId,
-    required this.theaterName,
-    required this.theaterImageUrl,
+    required this.cinemaId,
+    required this.cinemaName,
+    required this.cinemaImageUrl,
     this.action,
   })  : _loading = false,
         super(key: key);
 
-  final String theaterId;
+  final int cinemaId;
 
-  final String theaterName;
+  final String cinemaName;
 
-  final String theaterImageUrl;
+  final String cinemaImageUrl;
 
   final bool _loading;
 
   final VoidCallback? action;
 
   /// Template Theater Poster Widget with Shimmer efffect showing when application loading data.
-  const TheaterPosterWidget.loading({Key? key})
-      : theaterId = empty,
-        theaterName = empty,
-        theaterImageUrl = empty,
+  const CinemaPosterWidget.loading({Key? key})
+      : cinemaId = zero,
+        cinemaName = empty,
+        cinemaImageUrl = empty,
         _loading = true,
         action = null,
         super(key: key);
@@ -83,14 +83,14 @@ class TheaterPosterWidget extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(kImageBorderRadius),
                   child: CachedNetworkImage(
-                    imageUrl: theaterImageUrl,
+                    imageUrl: cinemaImageUrl,
                     height: kCinemaPosterSize,
                     width: kCinemaPosterSize,
                     fit: BoxFit.fitHeight,
                   ),
                 ),
                 Text(
-                  theaterName,
+                  cinemaName,
                   style: Theme.of(context).textTheme.headline4,
                 ),
               ],

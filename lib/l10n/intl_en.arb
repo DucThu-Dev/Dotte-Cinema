@@ -47,5 +47,14 @@
     "YouDidntLikeAnyCinemaYet": "You did not like any cinema yet.",
     "DetailInformation": "Detail information",
     "EstimateReleaseDate": "Estimated release date",
-    "Follow": "Follow"
+    "Follow": "Follow",
+    "ErrorOccurred": "Unfortunately, some errors occurred.\nPlease try again later.",
+    "BookTicketComplete": "Book ticket completed.",
+    "Popularity": "Popularity",
+    "Language": "Language",
+    "ShareMessage": "Go with me for {movie} movie at Dotte Cinema.",
+    "NoPromotionYet": "No promotion available.",
+    "NoEventAvailable": "No event available.",
+    "YouHaveNoTicket": "You don't have any ticket.",
+    "NoNotificationYet": "You have no notification."
 }
