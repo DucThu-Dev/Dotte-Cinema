@@ -9,11 +9,18 @@
 
 > A movie cinema booking application, clone Lotte Cinema, but improve UI.
 
-  
+## Built with
+This application use:
 
+ - [TheMovieDB](https://www.themoviedb.org/) API for trending film information.
+ - Applied [Flutter Architecture Blueprints](https://github.com/wasabeef/flutter-architecture-blueprints) recommendation.
+
+## Demo
+<div align="center">
+<img src="photos/dotte_cinema.jpg" heigh="480px">
+</div>
 ## Author
 
-  
 
 👤 **DucThu-Dev**
 
