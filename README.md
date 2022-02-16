@@ -17,7 +17,7 @@ This application use:
 
 ## Demo
 <div align="center">
-<img src="photos/dotte_cinema.jpg" heigh="480px">
+<img src="photos/dotte_cinema.jpg" height="480px">
 </div>
 ## Author
 
